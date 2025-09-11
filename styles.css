@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
 }
+
 :root{
     --primary: #4CAF4F;
     --secondary: #263238;
@@ -12,6 +13,7 @@
     --white-gray:#717171;
     --small-text: 0.69rem;
     --silver:#F5F7FA;
+    --light-grey:#89939E;
 }
 body{
     font-family: 'Inter', sans-serif;
@@ -40,8 +42,19 @@ header{
     font-weight: 700;
     color:var(--grey);
 }
+.med-_font{
+    font-size: 0.87rem;
+    font-weight: 600;
+}
 .small_font{
     font-size: 0.69rem;
+    line-height: 1.4;
+}
+.super_small_font{
+    font-size: 0.6rem;
+}
+.green_text{
+    color:var(--primary)
 }
 .highlight{
     display: block;
@@ -50,13 +63,13 @@ header{
     justify-content: center;
     margin-bottom: 2%;
 }
-.green_text{
-    color:var(--primary)
-}
 .container{
     width:100%;
     margin: 0 auto;
     padding: 0 10%;
+}
+.grey{
+    color: var(--light-grey);
 }
 .logo{
     width: 10.37rem;
@@ -244,9 +257,53 @@ header{
     width: 2rem;
     height: 2rem;
 }
-
-@media (min-width: 768px) {
-  html {
-    font-size: 8px; 
-  }
+.design{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+ 
+}
+.design img{
+    max-width: 40%;
+}
+.design div{
+    max-width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding-right: 5%;
+}
+.tesla{
+    display: flex;
+    background-color: var(--silver);
+    justify-content: space-between;
+    align-items: stretch;
+    gap:5%;
+    padding: 2rem 10%;
+}
+.tesla_logos{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tesla_logos img{
+    width: 2rem ;
+    height: 2rem ;
+    object-fit: contain;
+}
+.tesla_text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.tesla > img:first-child{
+    max-width: 14rem;
+    width: 22vw;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
